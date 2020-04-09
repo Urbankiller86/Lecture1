@@ -4,12 +4,25 @@
         <title>
             Web Site!
         </title>
+        <meta name="viewpoer" content="width=device-width, initial-scale=1.0">
         <style>
-            @media(max-widht:499px){
+            @media(min-width:500px){
+                body{
+                    background-color: red;
+                }
+                h1::before{
+                    content:"Welcome to my webpage";
+                }
+            }
+            @media(max-width:499px){
                 body{
                     background-color: blue;
                 }
+                h1::before{
+                    content:"Welcome!";
+                }
             }
+            
         </style>
     </head>
     <body>
